@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npx ts-node index.ts --project tsconfig.json",
     "test": "node tests/index.ts",
-    "lint": "npm run lint"
+    "lint": "npx eslint . --fix"
   },
   "repository": {
     "type": "git",
