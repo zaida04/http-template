@@ -1,9 +1,9 @@
 import bodyParser from 'body-parser';
 import express, { Application, Router } from "express";
 import compression from "compression";
-import { version } from "./package.json";
 import DatabaseHandler from './database/DatabaseHandler';
 import { httpServerDetails } from './typings/httpServerTypings';
+import mainSubserver from './routes/main';
 
 declare global {
     namespace Express {
@@ -27,7 +27,7 @@ export default function httpserver(config: httpServerDetails) {
     http.use(compression());
 
     const api = Router();
-    api.use(`/api/v${http.details.apiVersion.charAt(0)}`)
+    api.use(`/api/v${http.details.apiVersion.charAt(0)}`, mainSubserver)
 
     return http;
 }

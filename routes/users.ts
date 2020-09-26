@@ -1,7 +1,7 @@
 import { Router } from "express";
-const subserver = Router();
+const userSubServer = Router();
 
-subserver.route("/:id")
+userSubServer.route("/:id")
     .get(async (req, res, next) => {
 
     })
@@ -15,4 +15,4 @@ subserver.route("/:id")
 
     })
 
-export const route = subserver;
+export default userSubServer;
