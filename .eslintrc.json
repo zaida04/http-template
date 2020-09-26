@@ -6,12 +6,11 @@
         "sourceType": "module"
     },
     "env": {
-        "node": true
+        "node": true,
+        "es6": true
     },
     "extends": [
-        "plugin:@typescript-eslint/recommended",
-        "prettier/@typescript-eslint",
-        "plugin:prettier/recommended"
+        "plugin:@typescript-eslint/recommended"
     ],
     "rules": {
         "prefer-template": "warn",
@@ -41,11 +40,12 @@
         "no-redeclare": "warn",
         "no-new-wrappers": "warn",
         "no-multi-spaces": "warn",
+        "@typescript-eslint/no-namespace": "off",
+        "@typescript-eslint/no-empty-function": "off",
         "no-implicit-coercion": "warn",
         "no-empty-pattern": "warn",
         "no-else-return": "warn",
         "eqeqeq": "warn",
-        "dot-location": "warn",
         "curly": "warn",
         "valid-typeof": "warn",
         "use-isnan": "warn",
@@ -73,11 +73,9 @@
         "nonblock-statement-body-position": "warn",
         "object-curly-newline": "warn",
         "object-property-newline": "warn",
-        "one-var": "warn",
         "one-var-declaration-per-line": "warn",
         "operator-assignment": "warn",
         "operator-linebreak": "warn",
-        "padded-blocks": "warn",
         "padding-line-between-statements": "warn",
         "quote-props": "warn",
         "quotes": ["warn"],

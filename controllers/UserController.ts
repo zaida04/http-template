@@ -1,15 +1,15 @@
-export async function CreateUser() {
-    return;
+export async function CreateUser(): Promise<void> {
+    return await Promise.resolve();
 }
 
-export async function DeleteUser() {
-
+export async function DeleteUser(): Promise<void> {
+    return await Promise.resolve();
 }
 
-export async function EditUser() {
-
+export async function EditUser(): Promise<void> {
+    return await Promise.resolve();
 }
 
-export async function GetUser() {
-    
+export async function GetUser(): Promise<void> {
+    return await Promise.resolve();
 }

@@ -1,7 +1,5 @@
 import { Schema } from "mongoose";
 
-const User = new Schema({
-    
-});
+const User = new Schema({});
 
 export default User;

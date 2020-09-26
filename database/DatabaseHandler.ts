@@ -1,15 +1,15 @@
 import mongoose from "mongoose";
 
 export default class DatabaseHandler {
-    api: mongoose.Connection
-    
+    api: mongoose.Connection;
+
     constructor(URI: string) {
         mongoose.set("useCreateIndex", true);
         mongoose.connect(URI, {
-            useNewUrlParser: true,
-            useFindAndModify: false,
-            useUnifiedTopology: true,
+            "useFindAndModify": false,
+            "useNewUrlParser": true,
+            "useUnifiedTopology": true
         });
-        this.api = mongoose.connection
+        this.api = mongoose.connection;
     }
 }
