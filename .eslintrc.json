@@ -80,7 +80,7 @@
         "padded-blocks": "warn",
         "padding-line-between-statements": "warn",
         "quote-props": "warn",
-        "quotes": ["double", "warn"],
+        "quotes": ["warn"],
         "semi": "warn",
         "semi-spacing": "warn",
         "semi-style": "warn",
