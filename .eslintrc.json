@@ -90,7 +90,7 @@
         "spaced-comment": "warn",
         "switch-colon-spacing": "warn",
         "template-tag-spacing": "off",
-        "sort-imports": "warn",
+        "sort-imports": "warn"
     },
     "overrides": [
         {
