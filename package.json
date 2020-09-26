@@ -5,7 +5,8 @@
   "main": "dist/src/index.js",
   "scripts": {
     "start": "npx ts-node index.ts --project tsconfig.json",
-    "test": "node tests/index.ts"
+    "test": "node tests/index.ts",
+    "lint": "npm run lint"
   },
   "repository": {
     "type": "git",
