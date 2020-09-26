@@ -1,7 +1,7 @@
 {
-  "name": "zitzok-backend",
+  "name": "http-template",
   "version": "1.0.0",
-  "description": "A media sharing platform",
+  "description": "A template for HTTP Servers made with ExpressJS in typescript",
   "main": "dist/src/index.js",
   "scripts": {
     "start": "npx ts-node index.ts --project tsconfig.json",
